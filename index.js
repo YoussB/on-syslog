@@ -23,6 +23,7 @@ syslog.start()
   });
 });
 
+
 process.on('SIGINT',function() {
   syslog.stop()
   .catch(function(err) {
